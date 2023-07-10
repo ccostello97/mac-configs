@@ -1,0 +1,56 @@
+{
+    // Theme
+    "workbench.colorTheme": "Tokyo Night Storm",
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontLigatures": true,
+    // Sidebar
+    "workbench.tree.indent": 24,
+    "files.exclude": {
+        "**/__pycache__": true,
+        ".mypy_cache": true,
+        ".pdm-python": true,
+        ".ruff_cache": true,
+        ".tool-versions": true,
+        ".venv": true,
+        "__pypackages__": true
+    },
+    // Autosave
+    "files.autoSave": "afterDelay",
+    "files.hotExit": "onExitAndWindowClose",
+    "window.restoreWindows": "all",
+    // Terminal
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+    // Python
+    "[python]": {
+        "editor.wordWrap": "wordWrapColumn",
+        "editor.wordWrapColumn": 79,
+        "editor.rulers": [
+            79
+        ],
+        "editor.defaultFormatter": "ms-python.black-formatter",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.fixAll": true,
+            "source.organizeImports": true
+        }
+    },
+    "ruff.args": [
+        // Most Ruff configs must be set from a config file
+        "--config=~/.vscode_config/ruff.toml"
+    ],
+    "flake8.args": [
+        // Ruff lacks this check for PEP-8 compliance
+        "--select=W504"
+    ],
+    "black-formatter.args": [
+        // PEP-8 line length compliance
+        "--line-length=79"
+    ],
+    "autoDocstring.docstringFormat": "pep257",
+    // Zsh autoswitch virtual env will handle this automatically
+    "python.terminal.activateEnvironment": false,
+    //
+    // Don't transmit statistics
+    "telemetry.telemetryLevel": "off",
+    "explorer.confirmDelete": false
+}

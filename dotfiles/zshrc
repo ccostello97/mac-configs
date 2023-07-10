@@ -1,0 +1,33 @@
+# Configure Powerlevel10k prompt
+. ~/.zsh_config/powerlevel10k-prompt.zsh
+
+# Set Zsh options
+. ~/.zsh_config/options.zsh
+
+# Enable completions
+. ~/.zsh_config/completions.zsh
+
+# Configure Brew
+. ~/.zsh_config/brew.zsh
+
+# Configure Zsh plugin manager
+. ~/.zsh_config/antidote.zsh
+
+# Configure Zsh plugins
+. ~/.zsh_config/zsh-autosuggestions.zsh
+. ~/.zsh_config/zsh-history-substring-search.zsh
+. ~/.zsh_config/zsh-syntax-highlighting.zsh
+. ~/.zsh_config/zsh-autoswitch-virtualenv.zsh
+
+# Configure CLI tools
+. ~/.zsh_config/asdf.zsh
+. ~/.zsh_config/conda.zsh
+. ~/.zsh_config/direnv.zsh
+. ~/.zsh_config/fzf.zsh
+. ~/.zsh_config/iterm2.zsh
+. ~/.zsh_config/ls.zsh
+. ~/.zsh_config/rustup.zsh
+. ~/.zsh_config/nano.zsh
+
+# Configure theme
+. ~/.zsh_config/powerlevel10k.zsh

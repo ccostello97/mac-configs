@@ -1,0 +1,16 @@
+set tabsize 4             # Set tab size to 4 spaces
+set tabstospaces          # Convert tabs to spaces
+set autoindent            # Enable auto-indentation
+set trimblanks            # Trim trailing whitespace on save
+set linenumbers           # Display line numbers
+set constantshow          # Highlight constant values
+set titlecolor white      # Set title color to white
+set keycolor cyan         # Set key color to cyan
+set functioncolor cyan    # Set function color to cyan
+set numbercolor white     # Set number color to white
+set zap                   # Enable "zap" command to delete a whole line
+set indicator             # Show cursor position in the status bar
+set mouse                 # Enable mouse support
+
+# Include additional .nanorc files from /opt/homebrew/share/nano/
+include /opt/homebrew/share/nano/*.nanorc

@@ -1,0 +1,15 @@
+# Theme
+romkatv/powerlevel10k
+
+# Completions
+zsh-users/zsh-completions
+conda-incubator/conda-zsh-completion
+ohmyzsh/ohmyzsh path:plugins/rust kind:fpath
+
+# Interface
+Aloxaf/fzf-tab
+marlonrichert/zsh-autocomplete
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-history-substring-search
+zsh-users/zsh-syntax-highlighting
+MichaelAquilina/zsh-autoswitch-virtualenv kind:defer

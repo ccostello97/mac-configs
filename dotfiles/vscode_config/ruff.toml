@@ -1,0 +1,12 @@
+# These settings need to be stored in a config
+# because there is no way to parameterize them
+# directory in VSCode `settings.json`
+
+select = ["ALL"]
+line-length = 79
+
+[pycodestyle]
+max-doc-length = 72
+
+[pydocstyle]
+convention = "pep257"
