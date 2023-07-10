@@ -4,9 +4,6 @@
 # Set Zsh options
 . ~/.zsh_config/options.zsh
 
-# Enable completions
-. ~/.zsh_config/completions.zsh
-
 # Configure Brew
 . ~/.zsh_config/brew.zsh
 
