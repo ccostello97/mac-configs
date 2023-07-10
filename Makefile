@@ -3,7 +3,7 @@ install_brew:
 	./setup/install_brew.sh
 
 install_tools:
-	chmod +x ./setup/install_packages.sh
+	chmod +x ./setup/install_tools.sh
 	./setup/install_tools.sh
 
 simlink:
