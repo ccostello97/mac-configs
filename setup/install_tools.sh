@@ -9,8 +9,7 @@ brew install \
     git \
     nano \
     pdm \
-    ripgrep \
-    -y
+    ripgrep
 
 # Casks
 brew install \
@@ -22,8 +21,7 @@ brew install \
     mambaforge \
     sublime-text \
     visual-studio-code \
-    zoom \
-    -y
+    zoom
 
 # Start autoupdate
 brew autoupdate start --upgrade --greedy --cleanup
