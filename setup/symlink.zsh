@@ -1,13 +1,13 @@
 IFS=$'\n'
 
-# Simlink dotfiles
+# Symlink dotfiles
 files="$PWD/dotfiles/*"
 for file in $files; do
     dotfile_symlink="$HOME/.$(basename "$file")"
     ln -sfn "$file" "$dotfile_symlink"
 done
 
-# Simlink app configs
+# Symlink app configs
 files=$(find "$PWD/app_configs" -type f)
 for file in $files; do
     config_symlink="$HOME/Library/Application Support${file#*app_configs}"
