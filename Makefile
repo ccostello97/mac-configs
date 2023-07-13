@@ -6,8 +6,8 @@ install_tools:
 	chmod +x ./setup/install_tools.sh
 	./setup/install_tools.sh
 
-simlink:
-	chmod +x ./setup/simlink.sh
-	./setup/simlink.sh
+symlink:
+	chmod +x ./setup/symlink.sh
+	./setup/symlink.sh
 
-setup: install_brew install_tools simlink
+setup: install_brew install_tools symlink
