@@ -6,8 +6,12 @@ install_tools:
 	chmod +x ./setup/install_tools.zsh
 	./setup/install_tools.zsh
 
-symlink:
-	chmod +x ./setup/symlink.zsh
-	./setup/symlink.zsh
+symlink_app_configs:
+	chmod +x ./setup/symlink_app_configs.zsh
+	./setup/symlink_app_configs.zsh
 
-setup: install_brew install_tools symlink
+symlink_dotfiles:
+	chmod +x ./setup/symlink_dotfiles.zsh
+	./setup/symlink_dotfiles.zsh
+
+setup: install_brew install_tools symlink_app_configs symlink_dotfiles

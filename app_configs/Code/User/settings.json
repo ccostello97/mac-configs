@@ -47,6 +47,8 @@
         "--line-length=79"
     ],
     "autoDocstring.docstringFormat": "pep257",
+    // Trim lines with only whitespace
+    "pythonIndent.trimLinesWithOnlyWhitespace": true,
     // Zsh autoswitch virtual env will handle this automatically
     "python.terminal.activateEnvironment": false,
     //

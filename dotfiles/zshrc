@@ -23,8 +23,9 @@
 . ~/.zsh_config/fzf.zsh
 . ~/.zsh_config/iterm2.zsh
 . ~/.zsh_config/ls.zsh
-. ~/.zsh_config/rustup.zsh
 . ~/.zsh_config/nano.zsh
+. ~/.zsh_config/npm.zsh
+. ~/.zsh_config/rustup.zsh
 
 # Configure theme
 . ~/.zsh_config/powerlevel10k.zsh
