@@ -2,7 +2,7 @@
 setopt AUTO_CD    # Change directory without `cd` command
 
 # History
-setopt BANG_HIST                 # Treat the '!' character specially during expansion.
+setopt BANG_HIST                 # Treat the `!` character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
 setopt HIST_EXPIRE_DUPS_FIRST    # Expire duplicate entries first when trimming history.
 setopt HIST_FIND_NO_DUPS         # Do not display a line previously found.
@@ -16,7 +16,8 @@ setopt INC_APPEND_HISTORY        # Write to the history file immediately, not wh
 setopt SHARE_HISTORY             # Share history between all sessions.
 
 # I/O
-setopt CORRECT    # Attempt to correct a mistyped command
+setopt CORRECT             # Attempt to correct a mistyped command
+CORRECT_IGNORE="[_|.]*"    # Do not offer corrections starting with `_` or `.`
 
 # Misc
 setopt NO_BEEP    # Do not make beeping sound on error
