@@ -9,7 +9,8 @@ brew install \
     git \
     nano \
     pdm \
-    ripgrep
+    ripgrep \
+    tmux
 
 # Casks
 brew install \
