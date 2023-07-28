@@ -1,4 +1,4 @@
-if command -v rustc > /dev/null 2>&1; then
+if command -v rustc &> /dev/null; then
     # Ensure `~/.zfunc` directory exists
     mkdir -p "$HOME/.zfunc"
     # Ensure completions for `rustup`

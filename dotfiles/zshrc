@@ -27,6 +27,7 @@
 . ~/.zsh_config/npm.zsh
 . ~/.zsh_config/react_native.zsh
 . ~/.zsh_config/rustup.zsh
+. ~/.zsh_config/vim.zsh
 
 # Configure theme
 . ~/.zsh_config/powerlevel10k.zsh
