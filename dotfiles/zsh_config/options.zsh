@@ -8,6 +8,9 @@ MANPATH=$MANPATH/usr/local/share/man:/usr/share/man
 # Changing directories
 setopt AUTO_CD    # Change directory without `cd` command
 
+# Pattern matching
+setopt EXTENDED_GLOB    # Extended globbing
+
 # History
 setopt BANG_HIST                 # Treat the `!` character specially during expansion.
 setopt EXTENDED_HISTORY          # Write the history file in the ":start:elapsed;command" format.
@@ -23,7 +26,7 @@ setopt INC_APPEND_HISTORY        # Write to the history file immediately, not wh
 setopt SHARE_HISTORY             # Share history between all sessions.
 
 # I/O
-setopt CORRECT                    # Attempt to correct a mistyped command
+setopt CORRECT             # Attempt to correct a mistyped command
 CORRECT_IGNORE="[_|.]*"    # Do not offer corrections starting with `_` or `.`
 
 # Misc
