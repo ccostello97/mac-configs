@@ -1,9 +1,9 @@
 # Set language
-export LANG=en_US.UTF-8
+LANG=en_US.UTF-8
 
 # Add to manpath
 # Note: No `:` here after `$MANPATH` because Antidote's comes with it
-export MANPATH=$MANPATH/usr/local/share/man:/usr/share/man
+MANPATH=$MANPATH/usr/local/share/man:/usr/share/man
 
 # Changing directories
 setopt AUTO_CD    # Change directory without `cd` command
@@ -24,7 +24,7 @@ setopt SHARE_HISTORY             # Share history between all sessions.
 
 # I/O
 setopt CORRECT                    # Attempt to correct a mistyped command
-export CORRECT_IGNORE="[_|.]*"    # Do not offer corrections starting with `_` or `.`
+CORRECT_IGNORE="[_|.]*"    # Do not offer corrections starting with `_` or `.`
 
 # Misc
 setopt NO_BEEP    # Do not make beeping sound on error
