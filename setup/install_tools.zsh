@@ -2,6 +2,7 @@
 brew install \
     antidote \
     asdf \
+    bat \
     direnv \
     fd \
     fzf \
