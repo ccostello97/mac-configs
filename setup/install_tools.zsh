@@ -1,4 +1,4 @@
-# Formulae
+# Brew formulae
 brew install \
     antidote \
     asdf \
@@ -13,7 +13,7 @@ brew install \
     ripgrep \
     tmux
 
-# Casks
+# Brew casks
 brew install \
     docker \
     firefox \
@@ -25,5 +25,8 @@ brew install \
     visual-studio-code \
     zoom
 
-# Start autoupdate
+# Start Brew autoupdate
 brew autoupdate start --upgrade --greedy --cleanup
+
+# Pdm extensions
+pdm self add pdm-bump
