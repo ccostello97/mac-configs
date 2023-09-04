@@ -38,9 +38,8 @@ asdf install python latest
 asdf plugin add rust
 asdf install rust latest
 
-# Setup Yarn package manager
+# Setup Node package managers
 corepack enable
-yarn set version berry
 
 # Add PDM bump to PDM
 pdm self add pdm-bump
