@@ -1,58 +1,55 @@
 {
-    // Theme
-    "workbench.colorTheme": "Tokyo Night Storm",
-    "editor.fontFamily": "'JetBrains Mono'",
-    "editor.fontLigatures": true,
-    // Sidebar
-    "workbench.tree.indent": 24,
-    "files.exclude": {
-        "**/__pycache__": true,
-        ".mypy_cache": true,
-        ".pdm-python": true,
-        ".ruff_cache": true,
-        ".tool-versions": true,
-        ".venv": true,
-        "__pypackages__": true
+  "[python]": {
+    // Automatically fix and organize imports on save
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true,
+      "source.organizeImports": true
     },
-    // Autosave
-    "files.autoSave": "afterDelay",
-    "files.hotExit": "onExitAndWindowClose",
-    "window.restoreWindows": "all",
-    // Terminal
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
-    // Python
-    "[python]": {
-        "editor.wordWrap": "wordWrapColumn",
-        "editor.wordWrapColumn": 79,
-        "editor.rulers": [
-            79
-        ],
-        "editor.defaultFormatter": "ms-python.black-formatter",
-        "editor.formatOnSave": true,
-        "editor.codeActionsOnSave": {
-            "source.fixAll": true,
-            "source.organizeImports": true
-        }
-    },
-    "ruff.args": [
-        // Most Ruff configs must be set from a config file
-        "--config=~/.vscode_config/ruff.toml"
-    ],
-    "flake8.args": [
-        // Ruff lacks this check for PEP-8 compliance
-        "--select=W504"
-    ],
-    "black-formatter.args": [
-        // PEP-8 line length compliance
-        "--line-length=79"
-    ],
-    "autoDocstring.docstringFormat": "pep257",
-    // Trim lines with only whitespace
-    "pythonIndent.trimLinesWithOnlyWhitespace": true,
-    // Zsh autoswitch virtual env will handle this automatically
-    "python.terminal.activateEnvironment": false,
-    //
-    // Don't transmit statistics
-    "telemetry.telemetryLevel": "off",
-    "explorer.confirmDelete": false
+    // Use Black as default formatter
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    // Format on save
+    "editor.formatOnSave": true,
+    // Enforce max line length of 79 (PEP-8)
+    "editor.rulers": [79],
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 79
+  },
+  // Automatically create PEP-257 style docstrings
+  "autoDocstring.docstringFormat": "pep257",
+  // Have Black formatter respect max line length
+  "black-formatter.args": ["--line-length=79"],
+  // Use JetBrains Mono font in the editor
+  "editor.fontFamily": "'JetBrains Mono'",
+  // Enable font ligatures
+  "editor.fontLigatures": true,
+  // Do not ask for confirmation
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // Automatically save files after delay
+  "files.autoSave": "afterDelay",
+  // Remember unsaved files on exit and window close
+  "files.hotExit": "onExitAndWindowClose",
+  // Apply Flake8 W504 - line break after binary operator (PEP-8)
+  "flake8.args": ["--select=W504"],
+  // Don't auto-activate Python venv (Zsh extension handles this)
+  "python.terminal.activateEnvironment": false,
+  // Automatically trim trailing whitespace
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  // Import Ruff configurations
+  "ruff.args": ["--config=~/.vscode_config/ruff.toml"],
+  // Don't send reports to Microsoft
+  "telemetry.telemetryLevel": "off",
+  // Use JetBrains Mono Nerd Font in Terminal
+  "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
+  // Enable inlay hints for TypeScript
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  // Reopen all windows after close
+  "window.restoreWindows": "all",
+  // Use Tokyo Night Storm theme
+  "workbench.colorTheme": "Tokyo Night Storm",
+  // Use VSCode icons
+  "workbench.iconTheme": "vscode-icons",
+  // Sidebar icon indent
+  "workbench.tree.indent": 24,
+  "vsicons.dontShowNewVersionMessage": true
 }

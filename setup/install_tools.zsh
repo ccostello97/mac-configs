@@ -28,5 +28,19 @@ brew install \
 # Start Brew autoupdate
 brew autoupdate start --upgrade --greedy --cleanup
 
-# Pdm extensions
+# Install languages via ASDF
+asdf plugin add nodejs
+asdf install nodejs latest
+
+asdf plugin add python
+asdf install python latest
+
+asdf plugin add rust
+asdf install rust latest
+
+# Setup Yarn package manager
+corepack enable
+yarn set version berry
+
+# Add PDM bump to PDM
 pdm self add pdm-bump
