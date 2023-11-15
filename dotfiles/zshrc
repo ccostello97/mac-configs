@@ -19,6 +19,7 @@
 # Configure CLI tools
 . ~/.zsh_config/asdf.zsh
 . ~/.zsh_config/conda.zsh
+. ~/.zsh_config/custom_bin.zsh
 . ~/.zsh_config/direnv.zsh
 . ~/.zsh_config/fzf.zsh
 . ~/.zsh_config/iterm2.zsh
@@ -26,6 +27,7 @@
 . ~/.zsh_config/nano.zsh
 . ~/.zsh_config/node.zsh
 . ~/.zsh_config/pip.zsh
+. ~/.zsh_config/pipx.zsh
 . ~/.zsh_config/react_native.zsh
 . ~/.zsh_config/rustup.zsh
 . ~/.zsh_config/vim.zsh

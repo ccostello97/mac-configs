@@ -1,14 +1,19 @@
 {
+  "[html][django-html][handlebars][hbs][mustache][jinja][jinja-html][nj][njk][nunjucks][twig]": {
+    // Use djLint as formatter
+    "editor.defaultFormatter": "monosans.djlint"
+  },
+  "[javascript][typescript]": {
+    // Use Prettier + ESLint as formatter
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    // Requirements for Prettier + ESLint plugin
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false,
+    "editor.formatOnSaveMode": "file",
+  },
   "[python]": {
-    // Automatically fix and organize imports on save
-    "editor.codeActionsOnSave": {
-      "source.fixAll": true,
-      "source.organizeImports": true
-    },
-    // Use Black as default formatter
+    // Use Black as formatter
     "editor.defaultFormatter": "ms-python.black-formatter",
-    // Format on save
-    "editor.formatOnSave": true,
     // Enforce max line length of 79 (PEP-8)
     "editor.rulers": [79],
     "editor.wordWrap": "wordWrapColumn",
@@ -18,31 +23,54 @@
   "autoDocstring.docstringFormat": "pep257",
   // Have Black formatter respect max line length
   "black-formatter.args": ["--line-length=79"],
+  // Use djLint
+  "djlint.useVenv": false,
+  "djlint.pythonPath": "/Users/christophercostello/.local/pipx/venvs/djlint/bin/python",
+  // Automatically fix and organize imports on save
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true,
+    "source.organizeImports": true
+  },
   // Use JetBrains Mono font in the editor
   "editor.fontFamily": "'JetBrains Mono'",
   // Enable font ligatures
   "editor.fontLigatures": true,
+  // Auto-format on save
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
   // Do not ask for confirmation
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  // Automatically save files after delay
+  "files.associations": {
+    "*.html.tera": "jinja-html"
+  },
   "files.autoSave": "afterDelay",
+  // Hide files
+  "files.exclude": {
+    "**/*.egg-info": true,
+    "**/.pdm-python": true,
+    "**/.venv": true,
+    "**/__pycache__": true
+  },
   // Remember unsaved files on exit and window close
   "files.hotExit": "onExitAndWindowClose",
   // Apply Flake8 W504 - line break after binary operator (PEP-8)
   "flake8.args": ["--select=W504"],
   // Don't auto-activate Python venv (Zsh extension handles this)
-  "python.terminal.activateEnvironment": false,
+  "python.terminal.activateEnvironment": true,
   // Automatically trim trailing whitespace
   "pythonIndent.trimLinesWithOnlyWhitespace": true,
   // Import Ruff configurations
-  "ruff.args": ["--config=~/.vscode_config/ruff.toml"],
+  "ruff.lint.args": ["--config=~/.vscode_config/ruff.toml"],
   // Don't send reports to Microsoft
   "telemetry.telemetryLevel": "off",
   // Use JetBrains Mono Nerd Font in Terminal
   "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font'",
   // Enable inlay hints for TypeScript
   "typescript.inlayHints.parameterNames.enabled": "all",
+  // Don't show message on new version
+  "vsicons.dontShowNewVersionMessage": true,
   // Reopen all windows after close
   "window.restoreWindows": "all",
   // Use Tokyo Night Storm theme
@@ -50,6 +78,5 @@
   // Use VSCode icons
   "workbench.iconTheme": "vscode-icons",
   // Sidebar icon indent
-  "workbench.tree.indent": 24,
-  "vsicons.dontShowNewVersionMessage": true
+  "workbench.tree.indent": 24
 }

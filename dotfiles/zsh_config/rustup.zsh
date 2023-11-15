@@ -7,4 +7,6 @@ if command -v rustc &> /dev/null; then
     [ ! -f "$HOME/.zfunc/_cargo" ] && rustup completions zsh cargo > "$HOME/.zfunc/_cargo"
     # Ensure `~/.zfunc` is in fpath (i.e. for completions)
     FPATH="$HOME/.zfunc:$FPATH"
+    # Add Cargo bin to PATH
+    PATH="$HOME/.cargo/bin:$PATH"
 fi
