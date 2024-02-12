@@ -2,13 +2,16 @@
 brew install \
     antidote \
     asdf \
+    autoenv \
     bat \
     direnv \
     fd \
     fzf \
     gh \
     git \
+    jq \
     nano \
+    nu \
     pdm \
     ripgrep \
     tmux
@@ -43,3 +46,4 @@ corepack enable
 
 # Add PDM bump to PDM
 pdm self add pdm-bump
+

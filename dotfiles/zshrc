@@ -18,8 +18,8 @@
 
 # Configure CLI tools
 . ~/.zsh_config/asdf.zsh
+. ~/.zsh_config/autoenv.zsh
 . ~/.zsh_config/conda.zsh
-. ~/.zsh_config/custom_bin.zsh
 . ~/.zsh_config/direnv.zsh
 . ~/.zsh_config/fzf.zsh
 . ~/.zsh_config/iterm2.zsh

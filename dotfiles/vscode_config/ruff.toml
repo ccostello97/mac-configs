@@ -3,6 +3,7 @@
 # directory in VSCode `settings.json`
 
 select = ["ALL"]
+ignore = ["D", "FA", "COM812", "ISC001"]
 line-length = 79
 
 [pycodestyle]

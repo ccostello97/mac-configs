@@ -5,6 +5,7 @@ romkatv/powerlevel10k
 zsh-users/zsh-completions
 conda-incubator/conda-zsh-completion
 baliestri/pnpm.plugin.zsh kind:fpath
+arno-di-loreto/jq-completions kind:fpath
 
 # Interface
 # marlonrichert/zsh-autocomplete
